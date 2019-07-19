@@ -9,7 +9,7 @@ func median(ar []int32) int32 {
         for j := lj; j > i; j-- {
             if ar[j] < ar[j-1] {
                 ar[j-1], ar[j] = ar[j], ar[j-1]            }
-                fmt.Println(ar)
+                //fmt.Println(ar)
         }
     }
     median := len(ar)/2
