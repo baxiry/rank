@@ -1,0 +1,28 @@
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "io"
+    "os"
+    "strconv"
+    "strings"
+)
+
+// Complete the insertionSort function below.
+func insertionSort(arr []int32) int32 {
+    ln := len(arr)
+
+    mv := 0
+    for i := 0; i < ln-2; i++ {
+        for j:= 0; j < ln; j++ {
+            if arr[i] > arr[i+1] {
+                arr[i], arr[i+1] = arr[i+1], arr[i]
+                mv++
+            } 
+        }
+    }
+    return int32(mv)
+}
+
+func main() {
